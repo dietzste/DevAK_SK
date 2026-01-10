@@ -10,7 +10,7 @@
             --font-size-h3: 56px;
             --font-dish-info: 32px;
             --font-size-small: 24px;
-            --min-margin: clamp(160px, 7vw, 160px);
+            --min-margin: clamp(80px, 7vw, 160px);
             --default-font-color: #000000;
             --h2-font-color: #9F0908;
             --telephone-font-color: #a24d4d;
@@ -198,6 +198,7 @@
 
         .title-container {
             margin-top: 200px;
+            text-align: center;
         }
 
         /* ORDER/MENU */
@@ -205,6 +206,7 @@
         .order-main,
         .menue-main {
             padding: 120px 0px;
+            text-align: center;
         }
 
         .order-box,
@@ -316,3 +318,28 @@
         .footer-left {
             height: 44px;
         }
+
+
+@media (max-width: 1028px) {
+    .navbar-left {
+        display: none;
+    }
+
+    .how-to-order-steps {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .menue-dish-boxes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .menue-dish-box-right {
+        flex-direction: column-reverse;
+    }
+
+    .menue-main-dish-box {
+        gap: 100px;
+    }
+}
